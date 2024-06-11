@@ -1463,7 +1463,7 @@ func (p *Config) WebAuthnConfig(ctx context.Context) *webauthn.Config {
 		RPID:          id,
 		RPOrigins:     origins,
 		AuthenticatorSelection: protocol.AuthenticatorSelection{
-			UserVerification: protocol.VerificationDiscouraged,
+			UserVerification: protocol.VerificationPreferred,
 		},
 		EncodeUserIDAsString: false,
 	}
